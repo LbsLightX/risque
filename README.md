@@ -1,9 +1,10 @@
 my cool site & blog :)
 
-###### details
+# Risque
 
-- risque
-- hosted on https://ebil.club
-- build using zola
-- themed with [evergarden](https://codeberg.org/evergarden)
-- dev env using nix
+A static website built with Zola.
+
+- Source-only repository
+- Built and deployed via GitHub Actions
+
+Content and structure are customized manually.

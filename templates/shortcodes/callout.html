@@ -1,0 +1,18 @@
+{#
+  {% callout(class="info") %}
+    an *important* notice
+  {% end %}
+#}
+
+<aside {% if class %}class="{{class}}"{% endif %}>
+  {% if title %}
+  <h6>{{title}}</h6>
+  {% else %}
+  {% if class %}
+  <h6>{{class}}</h6>
+  {% endif %}
+  {% endif %}
+  <p>
+    {{ body | markdown(inline=true) | safe }}
+  </p>
+</aside>

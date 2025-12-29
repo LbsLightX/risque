@@ -1,0 +1,70 @@
+@layer partials {
+  ul.blogpost-list {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 0 0;
+
+    gap: 1.5rem;
+
+    li.blogpost {
+      display: grid;
+      grid-template: auto auto / 100%;
+
+      list-style: none;
+      padding: 1rem;
+      gap: 1rem;
+
+      transition: border-color 100ms ease;
+
+      &:hover {
+        --border: var(--overlay0);
+      }
+
+      a.blogpost-info {
+        display: grid;
+        grid-template: "date" auto "title" auto "description" auto / 100%;
+
+        .title {
+          grid-area: title;
+
+          margin: .5rem 0rem .2rem;
+          align-self: end;
+
+          color: var(--text);
+        }
+
+        .date {
+          grid-area: date;
+
+          font-size: .9rem;
+
+          color: var(--overlay2);
+        }
+
+        .description {
+          grid-area: description;
+
+          color: var(--subtext1);
+        }
+
+        color: var(--overlay2);
+
+        text-decoration: none;
+
+        &:hover {
+          transition: color 300ms ease;
+          color: var(--special);
+
+          text-decoration: none;
+        }
+      }
+
+      ul.tag-list li {
+        a {
+          color: var(--subtext1);
+        }
+      }
+    }
+  }
+}

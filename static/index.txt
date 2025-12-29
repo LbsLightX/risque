@@ -1,0 +1,25 @@
+
+[1m                                   [38;2;248;249;232m[48;2;203;227;179mrobinwobin.dev[0m         [0m
+[38;2;203;227;179m[1m╭────────────────────────────────────────────────────────────────────────────────╮[0m
+  [38;2;248;249;232mhii! welcome to my site :)[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232mim robin. im a software designer in my freetime and a sociology student at uni[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232mwelcome to my internet garden, a cozy corner of the internet for storing my[0m
+  [38;2;248;249;232mideas and sharing what i'm working on.[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232min my garden you can find my /blog and documention for some of my /tools .[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232m✨ i'm passionate about:[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232m- software (neovim, nix, rust, and more)[0m
+  [38;2;248;249;232m- aesthetics (colorschemes, ui design, minimalism)[0m
+  [38;2;248;249;232m- nature & mythology (gardens, forests, folklore)[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232m🌱 in my projects, i blend these passions together:[0m
+  [38;2;248;249;232m[0m
+  [38;2;248;249;232m- evergarden (a soft, nature-inspired colorscheme)[0m
+  [38;2;248;249;232m- ember (a lightweight neovim plugin manager) (work-in-progress)[0m
+  [38;2;248;249;232m- ivy (a nix-based neovim setup)[0m
+[38;2;203;227;179m[1m╰────────────────────────────────────────────────────────────────────────────────╯[0m
+

@@ -1,0 +1,65 @@
+/* maple-mono-latin-400-normal */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-normal.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMonoNormal-Regular.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-normal.woff) format('woff');
+}
+
+/* maple-mono-latin-600-normal */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-600-normal.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMonoNormal-SemiBold.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-600-normal.woff) format('woff');
+}
+
+/* maple-mono-latin-700-normal */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-700-normal.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMonoNormal-Bold.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-700-normal.woff) format('woff');
+}
+
+/* maple-mono-latin-400-italic */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-italic.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMono-Italic.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-italic.woff) format('woff');
+}
+
+/* maple-mono-latin-600-italic */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-600-italic.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMono-SemiBoldItalic.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-600-italic.woff) format('woff');
+}
+
+/* maple-mono-latin-700-italic */
+@font-face {
+  font-family: 'Maple Mono';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-700-italic.woff2) format('woff2'),
+    url(/assets/fonts/maple-mono/MapleMono-BoldItalic.woff2),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-700-italic.woff) format('woff');
+}

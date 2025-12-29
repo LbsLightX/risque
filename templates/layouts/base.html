@@ -1,0 +1,99 @@
+{% block title %}
+{% set title = "robinwobin" %}
+{% endblock %}
+{% block description %}
+{% set description = "a cozy site" %}
+{% endblock %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light-dark" />
+    <meta name="darkreader-lock" />
+
+    {% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+    <link rel="stylesheet" type="text/css" href="/evergarden-winter.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" type="text/css" href="/evergarden-summer.css" media="(prefers-color-scheme: light)" />
+    {% endif %}
+
+    <title>{{ title }} | robinwobin</title>
+    <meta name="author" content="Robin" />
+    <meta name="description" content="{{ description }}" />
+    <link rel="canonical" href="{{ config.base_url }}" />
+    <link rel=expect href="#below-the-fold" blocking=render />
+
+    <meta property="twitter:domain" content="robinwobin.dev" />
+    <meta name="twitter:image" content="{{ get_url(path='/me.webp') }}" />
+    <meta name="twitter:card" content="{{ description }}" />
+
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ get_url(path='/me.webp') }}" />
+
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
+    <link type="text/plain" rel="author" href="/humans.txt" />
+
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="mask-icon" href="/favicon.svg" color="#b2c98f" />
+
+    <link rel="stylesheet" href="{{ get_url(path='/style.css') }}" />
+    {% set page_path = current_path | trim_end_matches(pat="/") %}
+    <link rel="stylesheet" href="{{ get_url(path='/styles/pages' ~ page_path ~ '.css') }}" />
+    {% endblock head %}
+
+    {% block additionalHead %} {% endblock additionalHead %}
+  </head>
+
+  <body>
+    <div id="root">
+      <header class="site-header">
+        <div class="site-header-wrapper">
+          {% include "partials/sitename.html" %}
+          {% include "partials/breadcrumbs.html" %}
+        </div>
+      </header>
+
+      <div id="page">
+        <div class="left sidebar">
+          {% block left %}
+            <div class="sidebar-search">
+              {% include "partials/search.html" %}
+            </div>
+            {% include "partials/nav.html" %}
+          {% endblock left %}
+        </div>
+
+        <div class="page-header">
+          {% include "partials/search.html" %}
+          <hgroup class="text">
+            {% block pageheader %} {% endblock pageheader %}
+          </hgroup>
+          {% block additionalPageheader %} {% endblock additionalPageheader %}
+        </div>
+
+        <section id="main" class="page text">
+          {% block content %} {% endblock content %}
+
+          <hr>
+        </section>
+
+        <div class="right sidebar">
+          {% block right %} {% endblock right %}
+        </div>
+
+        <footer class="page-footer">
+          {% include "partials/footer.html" %}
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="{{ get_url(path='elasticlunr.min.js') }}"></script>
+  <script type="text/javascript" src="{{ get_url(path='search.js') }}"></script>
+  {% block additionalfoot %} {% endblock %}
+</html>

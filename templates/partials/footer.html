@@ -1,0 +1,47 @@
+<div class="left">
+  <div class="webring ctp">
+    <a href="https://ctp-webr.ing/comfysage/previous">&larr;</a>
+    <a href="https://ctp-webr.ing/"> catppuccin webring </a>
+    <a href="https://ctp-webr.ing/comfysage/next">&rarr;</a>
+  </div>
+  <div class="webring sapphic">
+    <a href="https://ring.sapphic.moe/comfysage/previous">&larr;</a>
+    <a href="https://ring.sapphic.moe"> sapphic webring </a>
+    <a href="https://ring.sapphic.moe/comfysage/next">&rarr;</a>
+  </div>
+  <div class="webring ebil">
+    <a href="https://ebil.club/webring/robin/prev/">&larr;</a>
+    <a href="https://ebil.club/webring/"> ebil.club webring </a>
+    <a href="https://ebil.club/webring/robin/next/">&rarr;</a>
+  </div>
+</div>
+<div class="center">
+  <div class="license-info">
+    <a href="https://codeberg.org/comfysage/site">source</a> (EUPL-1.2)
+  </div>
+</div>
+<div class="right">
+  <div class="stack-info">
+    <p>
+      powered by
+      <a href="https://ebil.club" target="_blank">ebil.club</a>
+      &gt;:3
+    </p>
+  </div>
+  <div class="feed-info">
+    feed:
+    <a href="{{ get_url(path='/feed.xml') }}">atom</a>
+    or
+    <a href="{{ get_url(path='/rss.xml') }}">rss</a>
+  </div>
+  <div class="device-details"></div>
+  <script>
+    function setDeviceDetails(e) {
+      let { width, height } = e.currentTarget.screen;
+      document.querySelector(".device-details").innerText =
+        `${width}x${height}`;
+    }
+    window.addEventListener("load", setDeviceDetails);
+    window.addEventListener("resize", setDeviceDetails);
+  </script>
+</div>

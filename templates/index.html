@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}{% set title = section.title %}{% endblock %}
+{% block description %}{% set description = section.description %}{% endblock %}
+
+{% block pageheader %}
+  <h1 class="page-title">{{ section.title }}</h1>
+  <p class="subtitle subtle">{{ section.description }}</p>
+{% endblock pageheader %}
+
+{% block content %}
+  {{ section.content | safe }}
+{% endblock content %}
+
+{% block left %}
+  <div class="sidebar-search">
+    {% include "partials/search.html" %}
+  </div>
+  {% include "partials/nav.html" %}
+  {% include "partials/bloglist.html" %}
+{% endblock left %}
+
+{% block right %}
+<div class="datalist">
+<div class="section">
+  <h3>me</h3>
+  <ul role="list" data-category="links">
+    <li><a class="datalink" href="https://github.com/comfysage">github</a></li>
+    <li><a class="datalink" href="https://bsky.app/profile/comfysage.bsky.social">bluesky</a></li>
+  </ul>
+</div>
+<div class="section">
+  <h3>tech</h3>
+  <ul role="list" data-category="tech">
+    <li><a class="datalink" href="https://github.com/comfysage">github</a></li>
+    <li><a class="datalink" href="https://bsky.app/profile/comfysage.bsky.social">bluesky</a></li>
+  </ul>
+</div>
+<div class="section">
+  <h3>site</h3>
+  <ul role="list" data-category="site">
+    <li><a class="datalink" href="https://www.getzola.org">zola</a></li>
+    <li><a class="datalink" href="https://nixos.org">nix</a></li>
+    <li><a class="datalink" href="https://github.com/comfysage/evergarden">evergarden</a></li>
+  </ul>
+</div>
+</div>
+{% endblock right %}

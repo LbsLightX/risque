@@ -1,0 +1,39 @@
+@use "../_variables/responsive.scss" as *;
+
+@layer partials {
+  .page-footer {
+    display: grid;
+    grid-template: 1fr / auto 1fr auto;
+    grid-template-areas: "links source info";
+
+    @include onmobile() {
+      grid-template: auto auto auto / 1fr;
+      grid-template-areas:
+        "source"
+        "links"
+        "info";
+      gap: .6rem;
+    }
+
+    .left {
+      grid-area: links;
+    }
+
+    .center {
+      grid-area: source;
+    }
+
+    .right {
+      grid-area: info;
+    }
+
+    div {
+      text-align: center;
+      color: var(--subtext1);
+
+      .device-details {
+        color: var(--overlay1);
+      }
+    }
+  }
+}

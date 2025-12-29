@@ -1,0 +1,20 @@
+hii! welcome to my site :)
+
+im robin. im a software designer in my freetime and a sociology student at uni
+
+welcome to my internet garden, a cozy corner of the internet for storing my
+ideas and sharing what i'm working on.
+
+in my garden you can find my /blog and documention for some of my /tools .
+
+✨ i'm passionate about:
+
+- software (neovim, nix, rust, and more)
+- aesthetics (colorschemes, ui design, minimalism)
+- nature & mythology (gardens, forests, folklore)
+
+🌱 in my projects, i blend these passions together:
+
+- evergarden (a soft, nature-inspired colorscheme)
+- ember (a lightweight neovim plugin manager) (work-in-progress)
+- ivy (a nix-based neovim setup)

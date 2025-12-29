@@ -11,19 +11,34 @@
 
   html,
   body {
-    background-color: var(--base);
+    background: linear-gradient(
+      120deg,
+      var(--base),
+      var(--mantle),
+      var(--base)
+    );
+    background-size: 300% 300%;
+    animation: siteBgShift 28s ease-in-out infinite;
+  
     color: var(--text);
     font-family: var(--font-sans-serif);
     font-size: 13px;
   }
-
-  pre,
-  code {
-    font-family: var(--font-code), ui-monospace, monospace;
-    font-variant-ligatures: none;
+  
+  @keyframes siteBgShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
 
 :root {
   color-scheme: dark light;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+    body {
+      animation: none;
+        }
+      }

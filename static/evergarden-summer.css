@@ -59,3 +59,22 @@ text-decoration: underline;
 .z-markup.z-raw {
  color: #d0a3c3;
 }
+
+/* ===== smooth background test (temporary) ===== */
+
+body {
+  background: linear-gradient(
+      120deg,
+      #0b0b0f,
+      #141420,
+      #1b1b2f
+    );
+    background-size: 400% 400%;
+  animation: gradientShift 22s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
